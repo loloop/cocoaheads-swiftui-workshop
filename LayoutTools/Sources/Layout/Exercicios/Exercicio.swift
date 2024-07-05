@@ -1,8 +1,9 @@
 import SwiftUI
+import Common
 
 struct Exercicio: View {
   var body: some View {
-    EmptyView() // Me substitua!
+    EmptyView() // Resolva o exercicio aqui!
   }
 }
 

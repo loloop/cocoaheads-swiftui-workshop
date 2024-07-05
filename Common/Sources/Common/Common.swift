@@ -14,15 +14,15 @@ public enum WorkshopItem {
 }
 
 public enum WorkshopAnswer {
-  case customization
-  case layoutTools
+  case customization(CustomizationAnswer)
+  case layoutTools(LayoutAnswer)
   case interaction
   case dataFlow
   case interoperability
   case instagram
 }
 
-extension View {
+public extension View {
   func workshop(_ item: WorkshopItem) -> some View {
     switch item {
     case .answers(let answer):

@@ -7,12 +7,12 @@ struct AnswerRoot: View {
 
   var body: some View {
     switch answer {
-    case .layoutTools:
-      Text("TODO Layout Tools")
+    case .layoutTools(let answer):
+      LayoutTools(answer: answer)
     case .instagram:
       Text("TODO Instagram View")
-    case .customization:
-      Text("TODO Customization")
+    case .customization(let answer):
+      Customization(answer: answer)
     case .interaction:
       Text("TODO Interaction")
     case .dataFlow:
