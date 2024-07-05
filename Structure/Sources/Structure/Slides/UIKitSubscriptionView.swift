@@ -28,7 +28,10 @@ final class UIKitSubscriptionView: UIView {
   let subscriberCountLabel = {
     $0.translatesAutoresizingMaskIntoConstraints = false
     $0.text = "+2350"
-    $0.font = .preferredFont(forTextStyle: .largeTitle)
+    #if os(tvOS)
+    #else
+      $0.font = .preferredFont(forTextStyle: .largeTitle)
+    #endif
     return $0
   }(UILabel())
   
@@ -57,8 +60,12 @@ final class UIKitSubscriptionView: UIView {
     layer.shadowColor = UIColor.black.cgColor
     layer.shadowOpacity = 0.2
     layer.shadowRadius = 10
-    backgroundColor = .systemBackground
 
+    #if os(tvOS)
+    #else
+    backgroundColor = .systemBackground
+    #endif
+    
     [
       subscriptionTitle,
       subscriberCountLabel,

@@ -29,3 +29,7 @@ struct RootView: View {
 #Preview {
   RootView()
 }
+
+// TODOs
+// TODO: Add icon for all app versions
+// TODO: Add widgets

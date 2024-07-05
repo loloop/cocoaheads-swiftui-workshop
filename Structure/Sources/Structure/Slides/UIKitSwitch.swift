@@ -22,7 +22,10 @@ final class UIKitSwitch: UIView {
 
   let imageView = {
     $0.translatesAutoresizingMaskIntoConstraints = false
+    #if os(tvOS)
+    #else
     $0.tintColor = .darkText
+    #endif
     return $0
   }(UIImageView())
 
