@@ -25,7 +25,7 @@ struct cocoaheads_swiftui_workshopApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
         .modelContainer(sharedModelContainer)
     }
