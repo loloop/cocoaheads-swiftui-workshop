@@ -3,32 +3,24 @@
 
 import PackageDescription
 
-let common = Target.Dependency.product(
-  name: "Common",
-  package: "Common")
-
 let package = Package(
-    name: "Structure",
+    name: "Common",
     platforms: [
       .iOS(.v17)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Structure",
-            targets: ["Structure"]),
-    ],
-    dependencies: [
-      .package(path: "Common")
+            name: "Common",
+            targets: ["Common"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-          name: "Structure",
-          dependencies: [common]),
+            name: "Common"),
         .testTarget(
-            name: "StructureTests",
-            dependencies: ["Structure"]),
+            name: "CommonTests",
+            dependencies: ["Common"]),
     ]
 )

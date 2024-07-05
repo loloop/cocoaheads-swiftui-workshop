@@ -8,15 +8,15 @@ let common = Target.Dependency.product(
   package: "Common")
 
 let package = Package(
-    name: "Structure",
+    name: "LayoutTools",
     platforms: [
       .iOS(.v17)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Structure",
-            targets: ["Structure"]),
+            name: "LayoutTools",
+            targets: ["LayoutTools"]),
     ],
     dependencies: [
       .package(path: "Common")
@@ -25,10 +25,10 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-          name: "Structure",
-          dependencies: [common]),
+            name: "LayoutTools",
+            dependencies: [common]),
         .testTarget(
-            name: "StructureTests",
-            dependencies: ["Structure"]),
+            name: "LayoutTests",
+            dependencies: ["LayoutTools"]),
     ]
 )

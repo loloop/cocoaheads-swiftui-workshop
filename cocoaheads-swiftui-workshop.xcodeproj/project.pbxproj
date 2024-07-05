@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B41AC9A32C36F84900FA23C1 /* Structure in Frameworks */ = {isa = PBXBuildFile; productRef = B41AC9A22C36F84900FA23C1 /* Structure */; };
 		B454F2E42C3796D10063F25B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B454F2E32C3796CF0063F25B /* RootView.swift */; };
+		B454F2EA2C37A0090063F25B /* LayoutTools in Frameworks */ = {isa = PBXBuildFile; productRef = B454F2E92C37A0090063F25B /* LayoutTools */; };
 		B4D174BC2C35E88100390151 /* cocoaheads_swiftui_workshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D174BB2C35E88100390151 /* cocoaheads_swiftui_workshopApp.swift */; };
 		B4D174BE2C35E88100390151 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D174BD2C35E88100390151 /* ContentView.swift */; };
 		B4D174C02C35E88100390151 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D174BF2C35E88100390151 /* Item.swift */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		B41AC9A02C36E99F00FA23C1 /* Structure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Structure; sourceTree = "<group>"; };
 		B454F2E32C3796CF0063F25B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B454F2E82C379FFD0063F25B /* LayoutTools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LayoutTools; sourceTree = "<group>"; };
+		B454F2EE2C37ABAF0063F25B /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
 		B4D174B82C35E88100390151 /* cocoaheads-swiftui-workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoaheads-swiftui-workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D174BB2C35E88100390151 /* cocoaheads_swiftui_workshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoaheads_swiftui_workshopApp.swift; sourceTree = "<group>"; };
 		B4D174BD2C35E88100390151 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B454F2EA2C37A0090063F25B /* LayoutTools in Frameworks */,
 				B41AC9A32C36F84900FA23C1 /* Structure in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +54,8 @@
 		B4D174AF2C35E88100390151 = {
 			isa = PBXGroup;
 			children = (
+				B454F2EE2C37ABAF0063F25B /* Common */,
+				B454F2E82C379FFD0063F25B /* LayoutTools */,
 				B41AC9A02C36E99F00FA23C1 /* Structure */,
 				B4D174BA2C35E88100390151 /* cocoaheads-swiftui-workshop */,
 				B4D174B92C35E88100390151 /* Products */,
@@ -105,6 +111,7 @@
 			name = "cocoaheads-swiftui-workshop";
 			packageProductDependencies = (
 				B41AC9A22C36F84900FA23C1 /* Structure */,
+				B454F2E92C37A0090063F25B /* LayoutTools */,
 			);
 			productName = "cocoaheads-swiftui-workshop";
 			productReference = B4D174B82C35E88100390151 /* cocoaheads-swiftui-workshop.app */;
@@ -290,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "cocoaheads-swiftui-workshop/cocoaheads_swiftui_workshop.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"cocoaheads-swiftui-workshop/Preview Content\"";
@@ -313,10 +321,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.mauriciocardozo.cocoaheads-swiftui-workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
@@ -326,6 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "cocoaheads-swiftui-workshop/cocoaheads_swiftui_workshop.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"cocoaheads-swiftui-workshop/Preview Content\"";
@@ -349,10 +359,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.mauriciocardozo.cocoaheads-swiftui-workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};
@@ -383,6 +394,10 @@
 		B41AC9A22C36F84900FA23C1 /* Structure */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Structure;
+		};
+		B454F2E92C37A0090063F25B /* LayoutTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LayoutTools;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

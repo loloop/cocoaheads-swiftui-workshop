@@ -1,3 +1,4 @@
+import LayoutTools
 import SwiftUI
 import Structure
 
@@ -5,20 +6,20 @@ struct RootView: View {
   var body: some View {
     NavigationStack {
       List {
-        Section("Exemplos") {
-          NavigationLink {
-            Structure.Root()
-          } label: {
-            Text("Estrutura")
-          }
+        NavigationLink {
+          Structure.Root()
+        } label: {
+          Text("Estrutura")
+            .font(.title)
+            .padding(.vertical)
         }
 
-        Section("Exercícios") {
-          NavigationLink {
-            Text("Ferramentas de Layout")
-          } label: {
-            Text("Ferramentas de Layout")
-          }
+        NavigationLink {
+          LayoutTools.Root()
+        } label: {
+          Text("Ferramentas de Layout")
+            .font(.title)
+            .padding(.vertical)
         }
       }
     }

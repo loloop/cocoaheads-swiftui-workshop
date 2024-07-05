@@ -1,3 +1,5 @@
+import Common
+import SwiftUI
 import UIKit
 
 final class UIKitSubscriptionView: UIView {
@@ -82,13 +84,6 @@ final class UIKitSubscriptionView: UIView {
       subscriberPercentageLabel.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor)
     ])
   }
-}
-
-// TODO: Move this to a support common package
-import SwiftUI
-struct SwiftUIKitView<T: UIView>: UIViewRepresentable {
-  func makeUIView(context: Context) -> T { T() }
-  func updateUIView(_ uiView: T, context: Context) {}
 }
 
 #Preview {
