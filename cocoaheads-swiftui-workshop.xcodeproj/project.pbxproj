@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B41AC9A32C36F84900FA23C1 /* Structure in Frameworks */ = {isa = PBXBuildFile; productRef = B41AC9A22C36F84900FA23C1 /* Structure */; };
+		B4479A862C38BBEC00218AA4 /* Customization in Frameworks */ = {isa = PBXBuildFile; productRef = B4479A852C38BBEC00218AA4 /* Customization */; };
 		B454F2E42C3796D10063F25B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B454F2E32C3796CF0063F25B /* RootView.swift */; };
 		B454F2EA2C37A0090063F25B /* LayoutTools in Frameworks */ = {isa = PBXBuildFile; productRef = B454F2E92C37A0090063F25B /* LayoutTools */; };
 		B4D174BC2C35E88100390151 /* cocoaheads_swiftui_workshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D174BB2C35E88100390151 /* cocoaheads_swiftui_workshopApp.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		B41AC9A02C36E99F00FA23C1 /* Structure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Structure; sourceTree = "<group>"; };
+		B4479A842C38BB4E00218AA4 /* Customization */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Customization; sourceTree = "<group>"; };
 		B454F2E32C3796CF0063F25B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B454F2E82C379FFD0063F25B /* LayoutTools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LayoutTools; sourceTree = "<group>"; };
 		B454F2EE2C37ABAF0063F25B /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B454F2EA2C37A0090063F25B /* LayoutTools in Frameworks */,
+				B4479A862C38BBEC00218AA4 /* Customization in Frameworks */,
 				B41AC9A32C36F84900FA23C1 /* Structure in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +57,7 @@
 		B4D174AF2C35E88100390151 = {
 			isa = PBXGroup;
 			children = (
+				B4479A842C38BB4E00218AA4 /* Customization */,
 				B454F2EE2C37ABAF0063F25B /* Common */,
 				B454F2E82C379FFD0063F25B /* LayoutTools */,
 				B41AC9A02C36E99F00FA23C1 /* Structure */,
@@ -112,6 +116,7 @@
 			packageProductDependencies = (
 				B41AC9A22C36F84900FA23C1 /* Structure */,
 				B454F2E92C37A0090063F25B /* LayoutTools */,
+				B4479A852C38BBEC00218AA4 /* Customization */,
 			);
 			productName = "cocoaheads-swiftui-workshop";
 			productReference = B4D174B82C35E88100390151 /* cocoaheads-swiftui-workshop.app */;
@@ -394,6 +399,10 @@
 		B41AC9A22C36F84900FA23C1 /* Structure */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Structure;
+		};
+		B4479A852C38BBEC00218AA4 /* Customization */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Customization;
 		};
 		B454F2E92C37A0090063F25B /* LayoutTools */ = {
 			isa = XCSwiftPackageProductDependency;

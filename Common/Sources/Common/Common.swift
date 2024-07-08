@@ -22,6 +22,18 @@ public enum WorkshopAnswer {
   case instagram
 }
 
+public struct WorkshopAnswerView: View {
+  public init(_ answer: WorkshopAnswer) {
+    self.answer = answer
+  }
+
+  let answer: WorkshopAnswer
+
+  public var body: some View {
+    AnswerRoot(answer)
+  }
+}
+
 public extension View {
   func workshop(_ item: WorkshopItem) -> some View {
     switch item {
