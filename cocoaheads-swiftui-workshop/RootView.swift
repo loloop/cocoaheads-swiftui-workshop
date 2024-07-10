@@ -1,4 +1,4 @@
-import Common
+@_spi(Answer) import Common
 import Customization
 import LayoutTools
 import SwiftUI
@@ -51,8 +51,9 @@ struct RootView: View {
         }
 
         NavigationLink {
-          AdaptabilityView()
-            .navigationTitle("Adaptability")
+          AttributedStringView(attributedString: attributedString)
+//          AdaptabilityView()
+//            .navigationTitle("Adaptability")
         } label: {
           Text("Multiplataforma")
             .font(.title)
