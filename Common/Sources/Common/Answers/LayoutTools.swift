@@ -1,6 +1,6 @@
 import SwiftUI
 
-public enum LayoutAnswer {
+@_spi(Answer) public enum LayoutAnswer {
   case first, second, third
 }
 

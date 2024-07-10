@@ -3,22 +3,18 @@ import SwiftUI
 struct CompletePackageView: View {
   var body: some View {
     VStack {
-      EmptyView()
-        .workshop(.answers(.layoutTools(.second)))
+      WorkshopAnswerView(.layoutTools(.second))
 
       HStack {
-        EmptyView()
-          .workshop(.answers(.customization(.first)))
+        WorkshopAnswerView(.customization(.first))
 
-        EmptyView()
-          .workshop(.answers(.customization(.first)))
+        WorkshopAnswerView(.customization(.first))
 
-        EmptyView()
-          .workshop(.answers(.customization(.second)))
+        WorkshopAnswerView(.customization(.second))
+
       }
 
-      EmptyView()
-        .workshop(.answers(.layoutTools(.third)))
+      WorkshopAnswerView(.layoutTools(.third))
     }
   }
 }

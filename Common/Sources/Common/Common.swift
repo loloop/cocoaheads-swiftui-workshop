@@ -2,18 +2,18 @@
 // https://docs.swift.org/swift-book
 import SwiftUI
 
-public struct SwiftUIKitView<T: UIView>: UIViewRepresentable {
+@_spi(Answer) public struct SwiftUIKitView<T: UIView>: UIViewRepresentable {
   public init() {}
   public init(type: T.Type) {}
   public func makeUIView(context: Context) -> T { T() }
   public func updateUIView(_ uiView: T, context: Context) {}
 }
 
-public enum WorkshopItem {
+@_spi(Answer) public enum WorkshopItem {
   case answers(WorkshopAnswer)
 }
 
-public enum WorkshopAnswer {
+@_spi(Answer) public enum WorkshopAnswer {
   case customization(CustomizationAnswer)
   case layoutTools(LayoutAnswer)
   case interaction
@@ -22,7 +22,7 @@ public enum WorkshopAnswer {
   case instagram
 }
 
-public struct WorkshopAnswerView: View {
+@_spi(Answer) public struct WorkshopAnswerView: View {
   public init(_ answer: WorkshopAnswer) {
     self.answer = answer
   }
@@ -34,7 +34,7 @@ public struct WorkshopAnswerView: View {
   }
 }
 
-public extension View {
+@_spi(Answer) public extension View {
   func workshop(_ item: WorkshopItem) -> some View {
     switch item {
     case .answers(let answer):

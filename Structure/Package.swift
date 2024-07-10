@@ -3,10 +3,6 @@
 
 import PackageDescription
 
-let common = Target.Dependency.product(
-  name: "Common",
-  package: "Common")
-
 let package = Package(
     name: "Structure",
     platforms: [
@@ -26,7 +22,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
           name: "Structure",
-          dependencies: [common]),
+          dependencies: ["Common"]),
         .testTarget(
             name: "StructureTests",
             dependencies: ["Structure"]),

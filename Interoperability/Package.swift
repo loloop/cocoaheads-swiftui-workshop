@@ -4,27 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "Customization",
+    name: "Interoperability",
     platforms: [
-      .iOS(.v17)
+      .iOS(.v14),
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Customization",
-            targets: ["Customization"]),
-    ],
-    dependencies: [
-      .package(path: "Common")
+            name: "Interoperability",
+            targets: ["Interoperability"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Customization",
-            dependencies: ["Common"]),
+            name: "Interoperability"),
         .testTarget(
-            name: "CustomizationTests",
-            dependencies: ["Customization"]),
+            name: "InteroperabilityTests",
+            dependencies: ["Interoperability"]),
     ]
 )

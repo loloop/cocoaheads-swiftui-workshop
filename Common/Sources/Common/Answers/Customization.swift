@@ -1,6 +1,6 @@
 import SwiftUI
 
-public enum CustomizationAnswer {
+@_spi(Answer) public enum CustomizationAnswer {
   case first, second, third
 }
 
