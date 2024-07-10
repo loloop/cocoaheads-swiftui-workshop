@@ -5,13 +5,46 @@ public struct Root: View {
 
   public var body: some View {
     List {
-      Section("Slides") {
-        Text("Placeholder")
+      NavigationLink("Group") {
+        SlideViews.GroupView()
       }
 
-      Section("Exercícios") {
-        Text("Placeholder")
+      NavigationLink("VStack") {
+        SlideViews.VStackView()
       }
+
+      NavigationLink("HStack") {
+        SlideViews.HStackView()
+      }
+
+      NavigationLink("ZStack") {
+        SlideViews.ZStackView()
+      }
+
+      NavigationLink("Spacer") {
+        SlideViews.SpacerView()
+      }
+
+      NavigationLink("LayoutSystem") {
+        SlideViews.LayoutSystem()
+      }
+
+      NavigationLink("Geometry Reader") {
+        SlideViews.GeometryReaderView()
+      }
+
+      NavigationLink("ScrollView") {
+        SlideViews.ScrollViewView()
+      }
+
+      NavigationLink("List") {
+        SlideViews.ListView()
+      }
+
+      NavigationLink("Layout Priority") {
+        SlideViews.LayoutPriorityView()
+      }
+
     }
   }
 }
